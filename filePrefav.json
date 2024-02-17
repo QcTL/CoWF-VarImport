@@ -1,0 +1,15 @@
+[
+  ["cat", "--",  "Categoria", "--"],
+  ["bool", "--","hasNucleusDecoration", "Possiblita la generacio de esctructures decoratives en el nucli urbà"],
+  ["bool","--","hasOffsetNucleus", "Description"],
+  ["int-range","0:5","rangeOffsetX", "Description"],
+  ["int-range","0:5","rangeOffsetY", "Description"],
+  ["bool","--","hasGaussian", "Description"],
+  ["int-range","1:5","sizeKernelGaussian", "Description"],
+  ["int-range","1:3","nStarts", "Description"],
+  ["int-range","0:3","nIndustry", "Description"],
+  ["set",["City", "Desert"],"typeEnvironment", "Description"],
+  ["int-range","1:10", "nMainRoads", "Description"],
+  ["int-range", "1:3", "wideMainRoads", "Description"],
+  ["bool", "--", "hasLowLevelMainRoadsDivergent", "Description"]
+]
