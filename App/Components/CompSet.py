@@ -5,6 +5,9 @@ from App.GlobalMap import GlobalMap
 
 
 class CompSet:
+    """
+    Class that display the component type "Set" to the application
+    """
     def __init__(self, master, setValues: list[str], text: str, gMap: GlobalMap, description: str = ""):
         self.frame = customtkinter.CTkFrame(master, fg_color="#3D3D3D")
         self.frame.grid_columnconfigure(0, weight=1)
@@ -24,5 +27,10 @@ class CompSet:
         createToolTip(self.label, description)
 
     def setCurrentElement(self, newValue: str) -> None:
+        """
+        Event that is called when in the set its selected a new value
+        :param newValue: The new value of the set selected
+        :return: None
+        """
         self.setValue = newValue
         self.gMap.setValue(self.idValue, self.setValue)

@@ -4,6 +4,9 @@ from App.Components.ToolTip import createToolTip
 
 
 class CompBool:
+    """
+    Class that display the component type "Bool" to the application
+    """
     def __init__(self, master, text, gMap, description = ""):
         self.frame = customtkinter.CTkFrame(master, fg_color="#3D3D3D")
         self.frame.grid_columnconfigure(0, weight=1)
@@ -21,4 +24,8 @@ class CompBool:
         createToolTip(self.label, description)
 
     def checkbox_event(self) -> None:
+        """
+        Event that is called when the checkbox of the element Bool is pressed
+        :return:
+        """
         self.gMap.setValue(self.idValue, self.check_var.get())

@@ -4,6 +4,9 @@ from App.Components.ToolTip import createToolTip
 
 
 class CompIntRange:
+    """
+    Class that display the component type "Int Range" to the application
+    """
     def __init__(self, master, rangeValue, text, gMap, description = ""):
         self.frame = customtkinter.CTkFrame(master, fg_color="#3D3D3D")
         self.label = customtkinter.CTkLabel(self.frame, text=text)
@@ -24,6 +27,11 @@ class CompIntRange:
         createToolTip(self.label, description)
 
     def slider_event(self, value: float) -> None:
+        """
+        Event that is called when the slider of the element is moved
+        :param value: The new value of the slider
+        :return: None
+        """
         self.sliderValue = int(value)
         self.labelValue.configure(text=self.sliderValue)
         self.gMap.setValue(self.idValue, self.sliderValue)

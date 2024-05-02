@@ -12,7 +12,19 @@ customtkinter.set_default_color_theme("blue")
 
 
 class App(customtkinter.CTk):
-    def __init__(self, cEntrances):
+    """
+    Main application made with tkinter to display the different parameters it's assigned at creation
+    """
+
+    def __init__(self, cEntrances: list[tuple[str, str, str, str]]):
+        """
+        Constructor function
+        :param cEntrances: A List of tuples of 4 elements that contain (eTypeId, eValues, eNameId, eDescription)
+            eTypeId: Type of variable selection
+            eValues: Set of values to select
+            eNameId: The name of the attribute to select
+            eDescription: A description of the attribute
+        """
         super().__init__()
 
         self.title("Wizard City of Weird Fishes")

@@ -2,14 +2,23 @@ import tkinter as tk
 
 
 class ToolTip(object):
+    """
+    Class that display the components description on the screen when the text is hovered
+    """
+
     def __init__(self, widget):
+        self.text = None
         self.widget = widget
         self.tipWindow = None
         self.id = None
         self.x = self.y = 0
 
     def showtip(self, text):
-        "Display text in tooltip window"
+        """
+        Display the text in tooltip window
+        :param text: The text you want to display
+        :return: None
+        """
         self.text = text
         if self.tipWindow or not self.text:
             return
@@ -23,6 +32,10 @@ class ToolTip(object):
         label.pack(ipadx=1)
 
     def hidetip(self):
+        """
+        Hide the tooltip window
+        :return: None
+        """
         tw = self.tipWindow
         self.tipWindow = None
         if tw:
