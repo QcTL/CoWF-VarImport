@@ -15,6 +15,7 @@ This application is a configuration tool designed to display and modify differen
 
 - Python 3.x
 - Tkinter library
+- Customtkinter library
 
 ## Usage
 
