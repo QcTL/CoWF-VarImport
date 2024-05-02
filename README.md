@@ -1,6 +1,7 @@
 # Wizard City of Weird Fishes - Configuration Tool
 
 This application is a configuration tool designed to display and modify different parameters using a graphical user interface (GUI) created with tkinter. It reads configuration data from a JSON file, presents the parameters to the user, allows modifications, and provides an option to export the modified configuration to a text file.
+
 ![Screenshot of Project](https://github.com/QcTL/CoWF-VarImport/assets/71326643/441a91c2-e282-4e74-ac6d-a24dabbf1f79)
 
 ## Features
